@@ -16,7 +16,7 @@ jobs:
     
     - stage: publish
       if: branch = master
-      os: windows
+      os: osx
       script: 
         - npm install
         - npm run package-win
