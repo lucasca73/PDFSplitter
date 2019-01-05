@@ -1,0 +1,10 @@
+{
+    "name": "pdfSplitter",
+    "productName": "PDF Splitter APP",
+    "version": "0.1.0",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^4.0.1",
+        "electron-packager": "^13.0.1"
+    }
+}
