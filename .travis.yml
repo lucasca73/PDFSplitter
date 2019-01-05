@@ -1,0 +1,30 @@
+sudo: required
+
+jobs:
+  include:
+    - stage: publish-mac
+      if: branch = master
+      os: osx
+      script: 
+        - npm install
+        - npm run package-mac
+        - ls
+        - ls release-builds
+    
+    - stage: publish-win
+      if: branch = master
+      os: windows
+      script: 
+        - npm install
+        - npm run package-win
+        - ls
+        - ls release-builds
+
+    - stage: publish-linux
+      if: branch = master
+      os: linux
+      script: 
+        - npm install
+        - npm run package-linux
+        - ls
+        - ls release-builds

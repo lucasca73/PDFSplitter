@@ -1,4 +1,8 @@
-node_module/*
 node_modules/
+node_module/*
 
 package-lock.json
+
+# electron builds
+release-builds/
+release-builds/*

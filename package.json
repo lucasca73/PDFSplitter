@@ -1,10 +1,15 @@
 {
-    "name": "pdfSplitter",
+    "name": "pdf-splitter",
     "productName": "PDF Splitter APP",
     "version": "0.1.0",
     "main": "main.js",
     "devDependencies": {
         "electron": "^4.0.1",
         "electron-packager": "^13.0.1"
+    },
+    "scripts": {
+        "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=icon.png --prune=true --out=release-builds",
+        "package-win": "electron-packager . pdf-splitter --overwrite --asar=true --platform=win32 --arch=ia32 --icon=icon.png --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"PDF Splitter APP\"",    
+        "package-linux": "electron-packager . pdf-splitter --overwrite --asar=true --platform=linux --arch=x64 --icon=icon.png --prune=true --out=release-builds"
     }
 }
