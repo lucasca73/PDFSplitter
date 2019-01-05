@@ -6,13 +6,9 @@
     "license": "MIT",
     "devDependencies": {
         "electron": "^4.0.1",
-        "electron-packager": "^13.0.1",
         "electron-builder": "^20.36.2",
-        "electron-webpack": "^2.6.1",
-        "webpack": "^4.26.0"
-    },
-    "dependencies": {
-        "source-map-support": "^0.5.9"
+        "electron-packager": "^13.0.1",
+        "electron-webpack": "^2.6.1"
     },
     "scripts": {
         "dev": "electron-webpack dev",

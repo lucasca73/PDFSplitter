@@ -17,4 +17,4 @@ install:
 build_script:
   - yarn dist
 
-test: off
+test: "off"
