@@ -1,8 +1,9 @@
 sudo: required
+language: node
 
 jobs:
   include:
-    - stage: publish-mac
+    - stage: publish
       if: branch = master
       os: osx
       script: 
@@ -11,7 +12,7 @@ jobs:
         - ls
         - ls release-builds
     
-    - stage: publish-win
+    - stage: publish
       if: branch = master
       os: windows
       script: 
@@ -20,7 +21,7 @@ jobs:
         - ls
         - ls release-builds
 
-    - stage: publish-linux
+    - stage: publish
       if: branch = master
       os: linux
       script: 
