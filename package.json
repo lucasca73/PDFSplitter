@@ -9,7 +9,7 @@
     },
     "scripts": {
         "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=icon.png --prune=true --out=release-builds",
-        "package-win": "electron-packager . pdf-splitter --overwrite --asar=true --platform=win32 --arch=ia32 --icon=icon.png --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"PDF Splitter APP\"",    
+        "package-win": "electron-packager . pdf-splitter --overwrite --asar --platform=win32 --arch=ia32 --icon=icon.png --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"PDF Splitter APP\"",    
         "package-linux": "electron-packager . pdf-splitter --overwrite --asar=true --platform=linux --arch=x64 --icon=icon.png --prune=true --out=release-builds"
     }
 }
