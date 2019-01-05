@@ -4,6 +4,8 @@
     "version": "0.1.0",
     "main": "main.js",
     "license": "MIT",
+    "author": "Lucas Costa Araujo",
+    "homepage": "./",
     "devDependencies": {
         "electron": "^4.0.1",
         "electron-builder": "^20.36.2",
@@ -17,5 +19,18 @@
         "package-linux": "electron-packager . pdf-splitter --overwrite --asar=true --platform=linux --arch=x64 --icon=icon.png --prune=true --out=release-builds",
         "pack": "electron-builder --dir",
         "dist": "electron-builder"
-    }
+    },
+    "build": {
+        "appId": "com.lucasca73.pdfsplitter",
+        "files": [
+          "build/**/*",
+          "node_modules/**/*"
+        ],
+        "directories":{
+          "buildResources": "assets"
+        },
+        "win": {
+            "icon": "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-256.png"
+        }
+      }
 }
