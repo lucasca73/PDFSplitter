@@ -1,6 +1,7 @@
 {
     "name": "pdf-splitter",
     "productName": "PDF Splitter APP",
+    "description": "PDF Splitter tool",
     "version": "0.1.0",
     "main": "main.js",
     "license": "MIT",
@@ -24,7 +25,9 @@
         "appId": "com.lucasca73.pdfsplitter",
         "files": [
           "build/**/*",
-          "node_modules/**/*"
+          "node_modules/**/*",
+          "./main.js",
+          "./index.html"
         ],
         "directories":{
           "buildResources": "assets"
